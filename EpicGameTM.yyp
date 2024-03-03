@@ -49,6 +49,7 @@
     {"id":{"name":"spr_enemy_bullet","path":"sprites/spr_enemy_bullet/spr_enemy_bullet.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_gamemanager","path":"objects/obj_gamemanager/obj_gamemanager.yy",},},
+    {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},},
     {"id":{"name":"obj_bullet_explosion","path":"objects/obj_bullet_explosion/obj_bullet_explosion.yy",},},
     {"id":{"name":"obj_playergun","path":"objects/obj_playergun/obj_playergun.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},

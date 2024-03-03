@@ -34,4 +34,7 @@ if !mouse_check_button(0) and shoot_timer <= 0
 current_rotation = point_direction(x,y,mouse_x,mouse_y) + max(0, lerp(0, angle_recoil, recoil_timer/recoil_time)) * 
 (current_direction > 90 and current_direction < 270 ? -1 : 1)
 
+x = lerp(x, global.player_x, .4)
+y = lerp(y, global.player_y, .4)
+
 recoil_timer--

@@ -29,6 +29,7 @@
     {"name":"spr_enemy_bullet","order":7,"path":"sprites/spr_enemy_bullet/spr_enemy_bullet.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"obj_gamemanager","order":1,"path":"objects/obj_gamemanager/obj_gamemanager.yy",},
+    {"name":"obj_enemy_bullet","order":10,"path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},
     {"name":"obj_bullet_explosion","order":9,"path":"objects/obj_bullet_explosion/obj_bullet_explosion.yy",},
     {"name":"obj_playergun","order":5,"path":"objects/obj_playergun/obj_playergun.yy",},
     {"name":"obj_bullet","order":6,"path":"objects/obj_bullet/obj_bullet.yy",},

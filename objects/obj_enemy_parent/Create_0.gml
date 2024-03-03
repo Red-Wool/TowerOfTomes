@@ -11,10 +11,23 @@ function hurt(damage)
 	}
 }
 
-enemy_speed = 5
+enemy_speed = 2
 
-target_x = 0
-target_y = 0
+move_target_dist = 200
+move_target_x = x
+move_target_y = y
+
+aggro_distance = 1000
+shoot_distance = 500
+idle_distance = 300
+
+move_time = 200
+move_timer = move_time
+
+gun_distance = 60
+
+gun_pos_x = x
+gun_pos_y = y
 
 recoil_x = 0
 recoil_y = 0

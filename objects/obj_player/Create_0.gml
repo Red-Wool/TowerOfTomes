@@ -5,5 +5,8 @@
 
 player_speed = 6
 
+global.player_x = x
+global.player_y = y
+
 global.player_force_x = 0
 global.player_force_y = 0

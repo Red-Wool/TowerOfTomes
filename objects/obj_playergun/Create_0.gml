@@ -6,7 +6,7 @@ player_recoil = 3
 
 recoil_x = 0
 recoil_y = 0
-position_recoil = 10
+position_recoil = 20
 angle_recoil = 40
 
 recoil_timer = 0
