@@ -7,6 +7,7 @@ function hurt(damage)
 	hp -= damage
 	if (hp <= 0)
 	{
+		global.camerafx.screen_shake(15, 20)
 		instance_destroy(self)	
 	}
 }

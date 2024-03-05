@@ -1,6 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+magazine_size = 12
+current_magazine = magazine_size
+reload_time = 30
+reload_timer = 0
+is_reloading = false
+animation_frame = 0
+
+hp = 2
+
+is_hit = false
+
+function damage(hp_damage)
+{
+	is_hit = true
+}
+
 gun_distance = 60
 player_recoil = 3
 

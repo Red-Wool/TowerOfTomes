@@ -8,7 +8,7 @@ death_time = 400
 
 visual_size = 1
 
-speed = 6
+speed = 8
 
 function death()
 {
