@@ -1,9 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+hurt_sound = [enemy_hurt_1,enemy_hurt_2,enemy_hurt_3]
+
+is_hit = false
 hp = 3
 function hurt(damage)
 {
+	is_hit = true
+	alarm[0] = 3
+	
 	hp -= damage
 	if (hp <= 0)
 	{

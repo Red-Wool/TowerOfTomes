@@ -5,7 +5,7 @@
 if (instance_place(x,y,obj_player))
 {
 	var _instance = instance_place(x,y,obj_player)
-	//_instance.hurt(1)
+	_instance.got_hit()
 	death()
 }
 if (instance_place(x,y,collision_list))

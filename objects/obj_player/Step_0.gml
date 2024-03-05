@@ -1,16 +1,16 @@
-if keyboard_check(vk_left)
+if keyboard_check(ord("A"))
 {
 	x -= player_speed
 }
-if keyboard_check(vk_right)
+if keyboard_check(ord("D"))
 {
 	x += player_speed
 }
-if keyboard_check(vk_up)
+if keyboard_check(ord("W"))
 {
 	y -= player_speed
 }
-if keyboard_check(vk_down)
+if keyboard_check(ord("S"))
 {
 	y += player_speed
 }
