@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 magazine_size = 12
 current_magazine = magazine_size
 reload_time = 30

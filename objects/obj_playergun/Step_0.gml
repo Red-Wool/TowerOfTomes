@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.death)
+{
+	image_index = spr_gun
+	recoil_timer = 0
+	exit
+}
+
+depth = -y-1
+
 shoot_timer--
 reload_timer--
 animation_frame = min(int64((reload_time - reload_timer)/2), 13)

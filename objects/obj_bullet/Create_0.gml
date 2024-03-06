@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-collision_list = [obj_block]
-
 timer = 0
 death_time = 200
 

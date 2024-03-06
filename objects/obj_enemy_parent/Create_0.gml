@@ -3,6 +3,9 @@
 
 hurt_sound = [enemy_hurt_1,enemy_hurt_2,enemy_hurt_3]
 
+move_x = 0
+move_y = 0
+
 is_hit = false
 hp = 3
 function hurt(damage)
@@ -18,6 +21,12 @@ function hurt(damage)
 	{
 		audio_play_sound(enemy_death,10,0,4,0,random_range(1.,1.5))
 		global.camerafx.screen_shake(15, 20)
+		global.camerafx.sleep(1,15)
+		
+		var d = instance_create_layer(x, y, "Effect", obj_enemy_death)
+		d.move_y = random_range(-3,3) + move_x *.3
+		d.move_x = random_range(-3,3) + move_y * .3
+		
 		instance_destroy(self)	
 	}
 	else
@@ -34,7 +43,7 @@ move_target_y = y
 
 aggro_distance = 1000
 shoot_distance = 500
-idle_distance = 300
+idle_distance = 400
 
 move_time = 200
 move_timer = move_time

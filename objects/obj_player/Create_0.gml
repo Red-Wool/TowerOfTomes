@@ -8,6 +8,8 @@ hp = 4
 
 is_hit = false
 
+gamemanager = pointer_null
+
 global.player_x = x
 global.player_y = y
 
@@ -17,6 +19,25 @@ global.player_force_y = 0
 function got_hit()
 {
 	hp--
-	is_hit = true
-	alarm[0] = 3
+	
+	if hp <= 0
+	{
+		global.game_manager.player_death()
+		global.death = true
+		
+		var d = instance_create_layer(x, y, "Effect", obj_player_death)
+		d.move_y = random_range(-10,10)
+		d.move_x = random_range(-10,10)
+		
+		global.camerafx.sleep(60,30)
+		
+		instance_destroy(self)
+		//gamemanager.player_death()
+	}
+	else
+	{
+		global.camerafx.sleep(4,15)
+		is_hit = true
+		alarm[0] = 6
+	}
 }

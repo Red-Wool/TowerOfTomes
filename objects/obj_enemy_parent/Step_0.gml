@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -y
+
 var dist = point_distance(x,y,global.player_x,global.player_y)
 if dist < aggro_distance
 {
@@ -13,12 +15,23 @@ if dist < aggro_distance
 	{
 		sprite_index = spr_enemy_walk
 		var target_direction = point_direction(x,y,move_target_x,move_target_y)
-		x += lengthdir_x(enemy_speed, target_direction)
-		y += lengthdir_y(enemy_speed, target_direction)
+		move_x += lengthdir_x(enemy_speed, target_direction)
+		move_y += lengthdir_y(enemy_speed, target_direction)
 	}
 	else
 	{
 		sprite_index = spr_enemy
+	}
+	
+	if (instance_place(x + move_x,y,obj_wall))
+	{
+		move_timer = -1
+		move_x = 0
+	}
+	if (instance_place(x,y + move_y,obj_wall))
+	{
+		move_timer = -1
+		move_y = 0
 	}
 	
 	if move_timer < 0
@@ -27,7 +40,12 @@ if dist < aggro_distance
 		move_target_x = x + (dist > idle_distance ? lengthdir_x(move_target_dist, current_direction) : random_range(-move_target_dist, move_target_dist))
 		move_target_y = y + (dist > idle_distance ? lengthdir_y(move_target_dist, current_direction) : random_range(-move_target_dist, move_target_dist))
 	}
-
+	
+	x += move_x
+	move_x = 0
+	y += move_y
+	move_y = 0
+	
 	//Gun
 	spawn_x = x + lengthdir_x(gun_distance, current_direction)
 	spawn_y = y + lengthdir_y(gun_distance, current_direction)
@@ -40,6 +58,7 @@ if dist < aggro_distance
 		shoot_timer = fire_rate
 	
 		var bullet = instance_create_layer(spawn_x, spawn_y, "MainLayer", obj_enemy_bullet)
+		audio_play_sound(gun_shot_varient,1,0,.5,0,random_range(1.5,2))
 	
 		var target_x = global.player_x + random_range(-bullet_spread,bullet_spread)
 		var target_y = global.player_y + random_range(-bullet_spread,bullet_spread)

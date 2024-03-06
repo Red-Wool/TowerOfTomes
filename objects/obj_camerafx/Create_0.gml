@@ -10,3 +10,9 @@ function screen_shake(pow, s_time)
 	shake_time = s_time
 	shake_timer = s_time
 }
+
+function sleep(t, gspeed)
+{
+	alarm[0] = t
+	game_set_speed(gspeed, gamespeed_fps);
+}

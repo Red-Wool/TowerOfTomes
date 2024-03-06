@@ -3,7 +3,7 @@
 
 draw_sprite_ext(spr_enemy_bullet,0,x,y,1,1,direction, c_white,1)
 
-var ghost_dist = 12
+var ghost_dist = 16
 if (timer > 1)
 {
 	for (var i = 0; i < 3; i++)
