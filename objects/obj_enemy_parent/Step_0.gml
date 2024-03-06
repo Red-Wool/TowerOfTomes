@@ -8,12 +8,17 @@ if dist < aggro_distance
 	
 	move_timer--
 	
-	
+	image_xscale = x - global.player_x > 0 ? 1 : -1
 	if point_distance(x,y,move_target_x,move_target_y) > enemy_speed
 	{
+		sprite_index = spr_enemy_walk
 		var target_direction = point_direction(x,y,move_target_x,move_target_y)
 		x += lengthdir_x(enemy_speed, target_direction)
 		y += lengthdir_y(enemy_speed, target_direction)
+	}
+	else
+	{
+		sprite_index = spr_enemy
 	}
 	
 	if move_timer < 0

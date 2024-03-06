@@ -1,6 +1,6 @@
 global.game_manager = self
 
-audio_play_sound(RollerMobster, 10, 1,.008)
+audio_play_sound(RollerMobster, 10, 1,.8)
 
 function destroy_all_blocks()
 {

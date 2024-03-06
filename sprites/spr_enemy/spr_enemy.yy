@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_enemy",
   "bbox_bottom": 63,
-  "bbox_left": 2,
+  "bbox_left": 1,
   "bbox_right": 57,
   "bbox_top": 14,
   "bboxMode": 0,
