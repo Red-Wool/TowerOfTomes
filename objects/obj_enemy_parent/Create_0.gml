@@ -10,11 +10,19 @@ function hurt(damage)
 	is_hit = true
 	alarm[0] = 3
 	
+	//var sound = asset_get_index("enemy_hurt_"+int64(random_range(1,3)))
+	
+	
 	hp -= damage
 	if (hp <= 0)
 	{
+		audio_play_sound(enemy_death,10,0,4,0,random_range(1.,1.5))
 		global.camerafx.screen_shake(15, 20)
 		instance_destroy(self)	
+	}
+	else
+	{
+		audio_play_sound(hurt_sound[irandom_range(0,2)],10,0,4,0,random_range(.8,1.2))	
 	}
 }
 
