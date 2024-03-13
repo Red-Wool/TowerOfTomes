@@ -4,11 +4,12 @@
 if (global.death)
 {
 	image_index = spr_gun
+	is_reloading = false
 	recoil_timer = 0
 	exit
 }
 
-depth = -y-1
+depth = -y-100
 
 shoot_timer--
 reload_timer--

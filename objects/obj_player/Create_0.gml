@@ -16,6 +16,9 @@ global.player_y = y
 global.player_force_x = 0
 global.player_force_y = 0
 
+has_book = false
+current_book = undefined
+
 function got_hit()
 {
 	hp--

@@ -8,6 +8,8 @@ reload_timer = 0
 is_reloading = false
 animation_frame = 0
 
+global.gun_speed = .5
+
 hp = 2
 
 is_hit = false
