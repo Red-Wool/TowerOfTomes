@@ -36,7 +36,7 @@ if mouse_check_button(mb_left) and shoot_timer <= 0 and !is_reloading
 {
 	if (global.current_magazine <= 0)
 	{
-		audio_play_sound(reload_gun,1,0,.5,0,random_range(1,1.5))
+		audio_play_sound(reload_gun,1,0,.5*global.sfx,0,random_range(1,1.5))
 		
 		var bullet_magazine = instance_create_layer(x, y, "Effect", obj_bullet_magazine)
 		bullet_magazine.move_x = random_range(-10,10)
@@ -56,12 +56,12 @@ if mouse_check_button(mb_left) and shoot_timer <= 0 and !is_reloading
 	
 		if global.gun_shots > 1
 		{
-			audio_play_sound(Shotgun,1,0,.5,0,random_range(1.,1.1)+max(1 - global.current_magazine,0)*.4)
+			audio_play_sound(Shotgun,1,0,.5*global.sfx,0,random_range(1.,1.1)+max(1 - global.current_magazine,0)*.4)
 			global.camerafx.screen_shake(15, 15)
 		}
 		else
 		{
-			audio_play_sound(gun_shot,1,0,.5,0,random_range(1.5,2)+max(3 - global.current_magazine,0)*.2)
+			audio_play_sound(gun_shot,1,0,.5*global.sfx,0,random_range(1.5,2)+max(3 - global.current_magazine,0)*.2)
 			global.camerafx.screen_shake(5, 10)
 		}
 		

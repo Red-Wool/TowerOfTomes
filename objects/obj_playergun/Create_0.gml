@@ -8,9 +8,9 @@ reload_timer = 0
 is_reloading = false
 animation_frame = 0
 
-global.gun_speed = 2.5
-global.gun_shots = 10
-global.gun_accuracy = 20
+global.gun_speed = 1
+global.gun_shots = 1
+global.gun_accuracy = 0
 
 hp = 2
 

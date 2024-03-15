@@ -7,6 +7,8 @@ player_speed = 6
 hp = 2
 
 is_hit = false
+global.the_end = false
+end_timer = 0
 
 gamemanager = pointer_null
 
@@ -15,6 +17,7 @@ global.player_y = y
 
 global.player_force_x = 0
 global.player_force_y = 0
+global.sfx = 1
 
 has_book = false
 current_book = undefined
@@ -23,7 +26,7 @@ function got_hit()
 {
 	hp--
 	
-	if hp <= 0
+	if hp <= 0 and !global.the_end
 	{
 		global.game_manager.player_death()
 		global.death = true
@@ -39,8 +42,9 @@ function got_hit()
 	}
 	else
 	{
-		global.camerafx.sleep(4,15)
+		global.camerafx.sleep(6,15)
 		is_hit = true
 		alarm[0] = 6
+
 	}
 }

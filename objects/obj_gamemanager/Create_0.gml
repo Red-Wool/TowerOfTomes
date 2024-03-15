@@ -24,3 +24,12 @@ function player_death()
 	
 	alarm[0] = 60
 }
+
+function sad()
+{
+	//show_message("This message was sponsered by the shadow government")
+	
+	game_end()
+}
+
+exception_unhandled_handler( function (exception) { show_message("This message was sponsered by the shadow government"); })

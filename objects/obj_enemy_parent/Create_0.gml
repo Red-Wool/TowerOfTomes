@@ -19,7 +19,7 @@ function hurt(damage)
 	hp -= damage
 	if (hp <= 0)
 	{
-		audio_play_sound(enemy_death,10,0,4,0,random_range(1.,1.5))
+		audio_play_sound(enemy_death,10,0,4*global.sfx,0,random_range(1.,1.5))
 		global.camerafx.screen_shake(15, 20)
 		global.camerafx.sleep(1,15)
 		
@@ -31,7 +31,7 @@ function hurt(damage)
 	}
 	else
 	{
-		audio_play_sound(hurt_sound[irandom_range(0,2)],10,0,4,0,random_range(.8,1.2))	
+		audio_play_sound(hurt_sound[irandom_range(0,2)],10,0,4*global.sfx,0,random_range(.8,1.2))	
 	}
 }
 

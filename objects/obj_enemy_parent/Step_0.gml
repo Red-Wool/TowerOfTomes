@@ -58,7 +58,7 @@ if dist < aggro_distance
 		shoot_timer = fire_rate
 	
 		var bullet = instance_create_layer(spawn_x, spawn_y, "MainLayer", obj_enemy_bullet)
-		audio_play_sound(gun_shot_varient,1,0,.5,0,random_range(1.5,2))
+		audio_play_sound(gun_shot_varient,1,0,.5*global.sfx,0,random_range(1.5,2))
 	
 		var target_x = global.player_x + random_range(-bullet_spread,bullet_spread)
 		var target_y = global.player_y + random_range(-bullet_spread,bullet_spread)

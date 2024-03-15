@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_book_bomb",
-    "path": "sprites/spr_book_bomb/spr_book_bomb.yy",
+    "name": "spr_book_shotgun",
+    "path": "sprites/spr_book_shotgun/spr_book_shotgun.yy",
   },
   "spriteMaskId": null,
   "visible": true,
