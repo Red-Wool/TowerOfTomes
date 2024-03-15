@@ -7,7 +7,7 @@ move_x = 0
 move_y = 0
 
 is_hit = false
-hp = 3
+hp = 2
 function hurt(damage)
 {
 	is_hit = true
@@ -35,17 +35,17 @@ function hurt(damage)
 	}
 }
 
-enemy_speed = 2
+enemy_speed = 3
 
 move_target_dist = 200
 move_target_x = x
 move_target_y = y
 
 aggro_distance = 1000
-shoot_distance = 500
+shoot_distance = 450
 idle_distance = 400
 
-move_time = 200
+move_time = 150
 move_timer = move_time
 
 gun_distance = 60

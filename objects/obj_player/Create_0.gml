@@ -4,7 +4,7 @@
 //mask_index = obj_block
 
 player_speed = 6
-hp = 4
+hp = 2
 
 is_hit = false
 

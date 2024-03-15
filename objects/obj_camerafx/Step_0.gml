@@ -11,3 +11,5 @@ if (shake_timer > 0)
 
 x = global.camera_x + shake_x
 y = global.camera_y + shake_y
+
+window_set_position(x-global.player_x + (display_get_width()-window_get_width())/2,y-global.player_y + (display_get_height()-window_get_height())/2)

@@ -1,7 +1,6 @@
 global.game_manager = self
 global.death = false
 
-music = audio_play_sound(RollerMobster, 10, 1,.8)
 
 function destroy_all_blocks()
 {
@@ -21,7 +20,7 @@ function destroy_some_blocks(j)
 
 function player_death()
 {
-	audio_stop_sound(RollerMobster)
+	//audio_stop_sound(RollerMobster)
 	
 	alarm[0] = 60
 }

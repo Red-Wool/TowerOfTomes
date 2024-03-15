@@ -4,6 +4,8 @@ shake_power = 0
 shake_time = 0
 shake_timer = 0
 
+width = window_get_width()/2
+
 function screen_shake(pow, s_time)
 {
 	shake_power = pow

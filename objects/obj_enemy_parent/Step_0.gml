@@ -36,7 +36,7 @@ if dist < aggro_distance
 	
 	if move_timer < 0
 	{
-		move_timer = move_time - random_range(0,60) - max(200-dist, 0)*.5
+		move_timer = move_time - random_range(0,60) - max(200-dist, 0)*1
 		move_target_x = x + (dist > idle_distance ? lengthdir_x(move_target_dist, current_direction) : random_range(-move_target_dist, move_target_dist))
 		move_target_y = y + (dist > idle_distance ? lengthdir_y(move_target_dist, current_direction) : random_range(-move_target_dist, move_target_dist))
 	}

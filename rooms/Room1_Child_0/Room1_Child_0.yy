@@ -36,8 +36,8 @@
     "path": "folders/Rooms.yy",
   },
   "parentRoom": {
-    "name": "Room1",
-    "path": "rooms/Room1/Room1.yy",
+    "name": "GameScene",
+    "path": "rooms/GameScene/GameScene.yy",
   },
   "physicsSettings": {
     "inheritPhysicsSettings": true,

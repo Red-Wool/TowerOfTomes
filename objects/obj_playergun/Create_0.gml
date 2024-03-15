@@ -2,13 +2,15 @@
 // You can write your code in this editor
 
 magazine_size = 12
-current_magazine = magazine_size
+global.current_magazine = magazine_size
 reload_time = 30
 reload_timer = 0
 is_reloading = false
 animation_frame = 0
 
-global.gun_speed = .5
+global.gun_speed = 2.5
+global.gun_shots = 10
+global.gun_accuracy = 20
 
 hp = 2
 
